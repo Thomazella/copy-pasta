@@ -8,5 +8,8 @@ import * as Sentry from "@sentry/react-native";
 
 logbox && require("react-native").unstable_enableLogBox();
 
+// eslint-disable-next-line
+console.disableYellowBox = true
+
 Sentry.init({ dsn });
 AppRegistry.registerComponent(appName, () => App);
